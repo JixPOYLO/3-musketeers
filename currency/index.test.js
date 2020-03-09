@@ -1,7 +1,7 @@
 const nock = require('nock');
 
 beforeEach(() => {
-  nock('https://api.exchangeratesapi.io')
+  nock('https://api.exchangeratesapi.io') 
     .get('/latest?base=USD')
     .reply(200, {
       'base': 'USD',
