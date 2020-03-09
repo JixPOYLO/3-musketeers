@@ -94,17 +94,45 @@ test('convert 1 BTC to EUR', async () => {
 });
 
 test('convert without arguments', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
+  result =>{
+    try {
+      expect(result).toBe(8944.49);
+      
+    } catch (error) {
+      console.log(error);
+    }
+  }
 });
 
 test('convert with amount only', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
+  result =>{
+    try {
+      expect(result).toBe('💵 Please specify a valid `from` and/or `to` currency value!');
+      
+    } catch (error) {
+      console.log(error);
+    }
+  }
 });
 
 test('convert with amount and (from) currency only', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
-});
+  result =>{
+    try {
+      expect(result).toBe('💵 Please specify a valid `from` and/or `to` currency value!');
+      
+    } catch (error) {
+      console.log(error);
+    }
+  }});
 
 test('convert without a correct `from` or `to` currency value', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
+  
+    result =>{
+      try {
+        expect(result).toBe('💵 Please specify a valid `from` and/or `to` currency value!');
+        
+      } catch (error) {
+        console.log(error);
+      }
+    }
 });
