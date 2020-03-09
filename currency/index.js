@@ -10,7 +10,7 @@ const isAnyBTC = (from, to) => [from, to].includes(CURRENCY_BITCOIN); // if 'fro
 module.exports = async opts => {
   const {amount = 1, from = 'USD', to = CURRENCY_BITCOIN} = opts; // we set by default that we wanna change 1 USD to another currenct which is bitcoin here
   const promises = [];
-  let base = from;
+  let base = from ;
 
   const anyBTC = isAnyBTC(from, to); 
 
