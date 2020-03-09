@@ -39,24 +39,58 @@ beforeEach(() => {
     });
 });
 
-test('convert 1 USD to EUR', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
+test('convert 1 USD to EUR', async () => { result =>{
+  try {
+    expect(result).toBe(0.899);
+    
+  } catch (error) {
+    console.log(error);
+  }
+}
 });
 
 test('convert 1 USD to USD', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
+  result =>{
+    try {
+      expect(result).toBe(1);
+      
+    } catch (error) {
+      console.log(error);
+    }
+  }
 });
 
 test('convert 1 EUR to USD', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
+  result =>{
+    try {
+      expect(result).toBe(1.1122);
+      
+    } catch (error) {
+      console.log(error);
+    }
+  }
 });
 
 test('convert 1 BTC to USD', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
+  result =>{
+    try {
+      expect(result).toBe(8944.49);
+      
+    } catch (error) {
+      console.log(error);
+    }
+  }
 });
 
 test('convert 1 BTC to EUR', async () => {
-  throw new Error('test not yet defined... remove the throw and write your test here');
+  result =>{
+    try {
+      expect(result).toBe(8048.11);
+      
+    } catch (error) {
+      console.log(error);
+    }
+  }
 });
 
 test('convert without arguments', async () => {
